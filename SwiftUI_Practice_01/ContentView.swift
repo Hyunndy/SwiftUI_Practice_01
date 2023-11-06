@@ -10,24 +10,24 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-        Button(action: {
-            print("안녕하세요")
-        }, label: {
-//            Text("텍스트로된 버튼1")
-//            Image(systemName: "eraser.fill")
-//            Text("배경+여백있는버전")
-//                .padding()
-//                .frame(width: 150)
-//                .background(.purple)
-//                .cornerRadius(13.0)
-//
-//            Button("myButton", action: {
-//                print("안녕ㅋ")
-//            })
-//            Button("Delete", role: .destructive, action: {
-//                print("deleted")
-//            })
-        })
+        VStack {
+            Text("Hello Hyunndy")
+                .bold()
+                .italic()
+                .strikethrough()
+            Text("Hello Hyunndy")
+                .font(.system(size: 30))
+            Text("Hello Hyunndy")
+                .underline(color: .purple)
+                .foregroundColor(.red)
+                .background(.orange)
+            Text("Hello Hyunndy")
+                .foregroundColor(.green)
+                .font(.system(size: 40, weight: .bold, design: .rounded))
+        }
+        
+        
+        
     }
 }
 
