@@ -10,20 +10,44 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-//        Image("t")
-//            .resizable()
-////            .aspectRatio(contentMode: .fit) // 이미지의 비율을 깨지 않은 상태로 View에 FIt하게.
-////            .aspectRatio(contentMode: .fill) // 이미지의 비율을 깨지 않은 상태로 View를 넘어도됨 + 얘는 Clipped()와 같이 써야한다.
-//            .aspectRatio(contentMode: .fill)
-//            .frame(width: 300.0, height: 300.0, alignment: .center)
-//            .clipped()
-//            .background(.orange)
-//            .border(.red, width: 10)
-        Image(systemName: "heart")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
-            .frame(width: 30, height: 30)
-            .background(.orange)
+        
+        /**
+         공부해야할 포인트.
+         Stack에는 10개밖에 못들어가는데, 더 많은걸 넣으려면 어떻게?
+         alignment가 StackView처럼 동작을 안하는데, 왜?
+         
+         Stack은 Stack이고, 안에 Contents들은 Contents들이네.
+         Stack의 Frame에 맞게 애들이 align되는게 아니고..
+         Contents중에 제일 큰 애 기준으로 사이즈가 잡히고.. 그 기준으로 Align이 먹는 느낌.
+         (Stack의 Frame을 지정해줬는데도)
+         만약 Stack의 Frame에 맞게 Content들을 align시키려면? 컨텐츠중에 하나의 frame을 Stack이랑 맞춰야한다.
+         
+         */
+        VStack(alignment: .trailing) {
+            Text("1234")
+            Text("21")
+            Text("35")
+                .frame(width: 400, alignment: .trailing)
+                .background(.blue)
+        }
+        
+//        ZStack {
+//            Color.orange
+//            Text("1")
+//        }
+        
+//        HStack {
+//            Text("1")
+//            Text("2")
+//            Text("3")
+//        }
+        
+        
+//        VStack {
+//            Text("1")
+//            Text("2")
+//            Text("3")
+//        }
     }
 }
 
