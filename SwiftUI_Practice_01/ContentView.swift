@@ -10,24 +10,20 @@ import CoreData
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Hello Hyunndy")
-                .bold()
-                .italic()
-                .strikethrough()
-            Text("Hello Hyunndy")
-                .font(.system(size: 30))
-            Text("Hello Hyunndy")
-                .underline(color: .purple)
-                .foregroundColor(.red)
-                .background(.orange)
-            Text("Hello Hyunndy")
-                .foregroundColor(.green)
-                .font(.system(size: 40, weight: .bold, design: .rounded))
-        }
-        
-        
-        
+//        Image("t")
+//            .resizable()
+////            .aspectRatio(contentMode: .fit) // 이미지의 비율을 깨지 않은 상태로 View에 FIt하게.
+////            .aspectRatio(contentMode: .fill) // 이미지의 비율을 깨지 않은 상태로 View를 넘어도됨 + 얘는 Clipped()와 같이 써야한다.
+//            .aspectRatio(contentMode: .fill)
+//            .frame(width: 300.0, height: 300.0, alignment: .center)
+//            .clipped()
+//            .background(.orange)
+//            .border(.red, width: 10)
+        Image(systemName: "heart")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 30, height: 30)
+            .background(.orange)
     }
 }
 
