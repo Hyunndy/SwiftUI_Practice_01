@@ -17,19 +17,14 @@ struct Data: Identifiable {
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "bolt")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 200)
-            Spacer()
-            Text("Bolt!")
-            Button {
-                print("Blink!")
-            } label: {
-                Text("Hit")
-            }
-        }
+        // safeArea침범 옵션 대박
+//        Color(.blue).edgesIgnoringSafeArea(.bottom)
+        
+        
+        // clipShape 이런 modifier 대박사건..
+        Color(.orange)
+            .frame(width: 300, height: 300)
+            .clipShape(RoundedRectangle(cornerRadius: 150))
     }
 }
 
