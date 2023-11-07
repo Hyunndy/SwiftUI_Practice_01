@@ -8,23 +8,58 @@
 import SwiftUI
 import CoreData
 
+struct Data: Identifiable {
+    var id = UUID()
+    
+    var name: String
+    var imageName: String = "t"
+}
+
 struct ContentView: View {
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
+        
+        let names: [Data] = [Data(name: "현지"), Data(name: "태훈"), Data(name: "얍얍")]
+        
+        // 동적인 리스트
+        List(names) { data in
             HStack {
-                Text("안녕")
-                    .frame(width: 300, height: 200)
-                    .background(.red)
-                Text("안녕")
-                    .frame(width: 300, height: 200)
-                    .background(.orange)
-                Text("안녕")
-                    .frame(width: 300, height: 200)
-                    .background(.blue)
-                
+                Text(data.name)
+                Image(data.imageName)
+                    .resizable()
+                    .clipped()
+                    .frame(width: 30, height: 30)
             }
         }
-        .background(.yellow)
+        
+        // 정적인것
+//        List {
+//            HStack {
+//                Image("t")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 30, height: 30)
+//                    .clipped()
+//                Text("현디")
+//            }
+//
+//            HStack {
+//                Image("t")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 30, height: 30)
+//                    .clipped()
+//                Text("태훈")
+//            }
+//
+//            HStack {
+//                Image("t")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 30, height: 30)
+//                    .clipped()
+//                Text("얍얍")
+//            }
+//        }
     }
 }
 
