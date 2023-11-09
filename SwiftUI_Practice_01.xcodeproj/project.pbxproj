@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02E564E12AF29A3600D21B36 /* SwiftUI_Practice_01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E564E02AF29A3600D21B36 /* SwiftUI_Practice_01App.swift */; };
-		02E564E32AF29A3600D21B36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E564E22AF29A3600D21B36 /* ContentView.swift */; };
+		02E564E32AF29A3600D21B36 /* EditorHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E564E22AF29A3600D21B36 /* EditorHomeView.swift */; };
 		02E564E52AF29A3700D21B36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E564E42AF29A3700D21B36 /* Assets.xcassets */; };
 		02E564E82AF29A3700D21B36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02E564E72AF29A3700D21B36 /* Preview Assets.xcassets */; };
 		02E564EA2AF29A3700D21B36 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E564E92AF29A3700D21B36 /* Persistence.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		02E564DD2AF29A3600D21B36 /* SwiftUI_Practice_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Practice_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E564E02AF29A3600D21B36 /* SwiftUI_Practice_01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Practice_01App.swift; sourceTree = "<group>"; };
-		02E564E22AF29A3600D21B36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02E564E22AF29A3600D21B36 /* EditorHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorHomeView.swift; sourceTree = "<group>"; };
 		02E564E42AF29A3700D21B36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02E564E72AF29A3700D21B36 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		02E564E92AF29A3700D21B36 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				02E564E02AF29A3600D21B36 /* SwiftUI_Practice_01App.swift */,
-				02E564E22AF29A3600D21B36 /* ContentView.swift */,
+				02E564E22AF29A3600D21B36 /* EditorHomeView.swift */,
 				02E564E42AF29A3700D21B36 /* Assets.xcassets */,
 				02E564E92AF29A3700D21B36 /* Persistence.swift */,
 				02E564EB2AF29A3700D21B36 /* SwiftUI_Practice_01.xcdatamodeld */,
@@ -264,7 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E564EA2AF29A3700D21B36 /* Persistence.swift in Sources */,
-				02E564E32AF29A3600D21B36 /* ContentView.swift in Sources */,
+				02E564E32AF29A3600D21B36 /* EditorHomeView.swift in Sources */,
 				02E564ED2AF29A3700D21B36 /* SwiftUI_Practice_01.xcdatamodeld in Sources */,
 				02E564E12AF29A3600D21B36 /* SwiftUI_Practice_01App.swift in Sources */,
 			);
